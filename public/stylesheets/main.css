@@ -1,0 +1,549 @@
+body {
+    background: #f2f6fc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 16px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.btn-logout {
+    padding: 8px 16px;
+    border: 1px solid #dc3545;
+    background-color: transparent;
+    color: #dc3545;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-logout:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    text-align: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    padding: 10px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.center-text {
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Tambahan untuk form */
+form {
+    max-width: 500px;
+    margin: auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-bck { 
+    display: block;
+    width: 50%;
+    margin: 20px auto; /* Ini yang bikin tombol ke tengah */
+    padding: 10px;
+    background-color: #dc3545;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+button:hover {
+    background-color: #45a049;
+}
+
+/*Style Tabel */
+/* === CSS Riwayat Pasien === */
+
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+a.btn {
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.btn-primary {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* ===== Styling untuk halaman Login ===== */
+.login-container {
+    max-width: 500px;          /* lebar maksimal container */
+    margin: 60px auto;         /* jarak atas 60px, auto kiri-kanan untuk centering */
+    padding: 30px;             /* padding di dalam container */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;        /* center semua teks di dalamnya */
+}
+
+.login-container h1 {
+    margin-bottom: 25px;       /* jarak bawah judul */
+    color: #333;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;    /* susun label dan input secara vertikal */
+    align-items: stretch;      /* input akan memenuhi lebar container */
+}
+
+.login-container label {
+    text-align: left;          /* label kiri agar teks “Username:” dan “Password:” tetap rata kiri */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+}
+
+/* ===== Styling untuk halaman Riwayat Pasien ===== */
+.history-container {
+    max-width: 90%;          /* lebar maksimal container */
+    margin: 60px auto;       /* 60px dari atas, auto kiri-kanan untuk centering */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;      /* center judul dan konten inline */
+}
+
+/* Pastikan h1 di dalam history-container ter‑center */
+.history-container h1 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Tabel di‑center otomatis oleh margin:auto, tapi kita pastikan width-nya */
+.history-container table {
+    width: 100%;
+    margin: auto;            /* center table dalam container */
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+/* Heading dan sel tetap center */
+.history-container th,
+.history-container td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+/* Warna header */
+.history-container th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hover effect */
+.history-container tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Tombol action */
+.history-container a.btn {
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.history-container .btn-primary {
+    background-color: #28a745;
+    color: white;
+}
+
+.history-container .btn-primary:hover {
+    background-color: #218838;
+}
+
+.history-container .btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.history-container .btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* ===== Styling untuk halaman Edit Data Pasien ===== */
+.edit-container {
+    max-width: 500px;         /* lebar maksimal */
+    margin: 60px auto;        /* 60px dari atas, auto kiri-kanan untuk centering */
+    padding: 30px;            /* ruang dalam container */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;       /* center teks judul dan elemen inline */
+}
+
+.edit-container h1 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Form sudah diatur untuk lebar penuh container */
+.edit-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Label kiri tapi input memenuhi lebar */
+.edit-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.edit-container input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Tombol simpan */
+.edit-container button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Hover tombol simpan */
+.edit-container button:hover {
+    background-color: #45a049;
+}
+
+/* Tombol kembali */
+.edit-container .btn-bck {
+    display: block;
+    width: 50%;
+    margin: 20px auto 0;  /* 20px atas, auto kiri-kanan */
+    padding: 10px;
+    background-color: #dc3545;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.edit-container .btn-bck:hover {
+    background-color: #c82333;
+}
+
+
+/* ===== Styling untuk halaman Form Pendaftaran Pasien ===== */
+.register-container {
+    max-width: 500px;         /* lebar maksimal container */
+    margin: 60px auto;        /* 60px dari atas, auto kiri-kanan untuk centering */
+    padding: 30px;            /* ruang dalam container */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;       /* center teks judul dan elemen inline */
+}
+
+.register-container h1 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Form column layout */
+.register-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Label kiri tapi input memenuhi lebar */
+.register-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.register-container input[type="text"],
+.register-container input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Tombol Daftar */
+.register-container button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Hover tombol Daftar */
+.register-container button:hover {
+    background-color: #45a049;
+}
+
+/* Tombol Kembali */
+.register-container .btn-bck {
+    display: block;
+    width: 50%;
+    margin: 20px auto 0;  /* 20px atas, auto kiri-kanan */
+    padding: 10px;
+    background-color: #dc3545;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.register-container .btn-bck:hover {
+    background-color: #c82333;
+}
+
+
+/* ===== Styling untuk halaman Register Akun Pasien ===== */
+.register-account-container {
+    max-width: 500px;          /* lebar maksimal */
+    margin: 60px auto;         /* 60px atas, auto kiri-kanan untuk centering */
+    padding: 30px;             /* ruang dalam container */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;        /* center teks judul dan elemen inline */
+}
+
+.register-account-container h1 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Form column layout */
+.register-account-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Label kiri tapi input memenuhi lebar */
+.register-account-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.register-account-container input[type="text"],
+.register-account-container input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Tombol Daftar */
+.register-account-container button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Hover tombol Daftar */
+.register-account-container button:hover {
+    background-color: #45a049;
+}

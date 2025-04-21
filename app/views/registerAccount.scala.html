@@ -1,0 +1,16 @@
+@(title: String)
+
+@main(title) {
+    <div class="register-account-container">
+        <h1>Register Akun Pasien</h1>
+        <form action="@routes.AuthController.registerAccount()" method="POST">
+            <label>Username:
+                <input type="text" name="username" required>
+            </label>
+            <label>Password:
+                <input type="password" name="password" required>
+            </label>
+            <button type="submit">Daftar</button>
+        </form>
+    </div>
+}

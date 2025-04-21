@@ -1,0 +1,20 @@
+@(title: String)
+
+@main(title) {
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="@routes.AuthController.login" method="POST">
+            <label>Username:
+                <input type="text" name="username">
+            </label>
+            <label>Password:
+                <input type="password" name="password">
+            </label>
+            <button type="submit">Login</button>
+        </form>
+
+        <p class="center-text">
+            Belum punya akun? <a href="@routes.AuthController.registerPage()">Daftar di sini</a>
+        </p>
+    </div>
+}

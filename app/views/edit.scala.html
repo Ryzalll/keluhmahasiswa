@@ -1,0 +1,43 @@
+@(patient: Patient, request: play.mvc.Http.Request)
+
+@main("Edit Pasien") {
+    <div class="edit-container">
+        <h1>Edit Data Pasien</h1>
+        
+        <form action="@routes.PatientController.edit()" method="POST">
+            <input type="hidden" name="id" value="@patient.id">
+
+            <label>Nama:
+                <input type="text" name="nama" value="@patient.nama">
+            </label>
+
+            <label>Nim:
+                <input type="text" name="nim" value="@patient.nim">
+            </label>
+
+            <label>Alamat:
+                <input type="text" name="alamat" value="@patient.alamat">
+            </label>
+
+            <label>Keluhan:
+                <input type="text" name="keluhan" value="@patient.keluhan">
+            </label>
+
+            <label>Solusi:
+                <input type="text" name="solusi" value="@patient.solusi">
+            </label>
+
+            <p><strong>Tanggal Pendaftaran:</strong> @patient.tanggal</p>
+
+            @if(request.session().getOptional("role").orElse("").equals("dokter")) {
+                <label>Tekanan Darah:
+                    <input type="text" name="tekananDarah" value="@patient.tekananDarah">
+                </label>
+            }
+
+
+            <button type="submit">Simpan Perubahan</button>
+            <a href="javascript:history.back()" class="btn-bck">Kembali</a>
+        </form>
+    </div>
+}

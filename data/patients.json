@@ -1,0 +1,55 @@
+[ {
+  "id" : "27c350a3",
+  "nama" : "yudha",
+  "nim" : "22",
+  "alamat" : "Jl. Telang No2",
+  "keluhan" : "demam",
+  "solusi" : "Makan",
+  "tanggal" : "20 April 2025",
+  "tekananDarah" : ""
+}, {
+  "id" : "10081ec8",
+  "nama" : "yudha",
+  "nim" : "22",
+  "alamat" : "Jl. Telang No1",
+  "keluhan" : "batuk pilke",
+  "solusi" : "makan yang banyak",
+  "tanggal" : "20 April 2025",
+  "tekananDarah" : ""
+}, {
+  "id" : "63e1ebef",
+  "nama" : "yudha",
+  "nim" : "22",
+  "alamat" : "Jl. Telang No1",
+  "keluhan" : "panas batuk pilek",
+  "solusi" : "",
+  "tanggal" : "20 April 2025",
+  "tekananDarah" : ""
+}, {
+  "id" : "a6bd45d1",
+  "nama" : "yudha",
+  "nim" : "22",
+  "alamat" : "Jl. Telang No1",
+  "keluhan" : "panas batuk pilek",
+  "solusi" : "",
+  "tanggal" : "20 April 2025",
+  "tekananDarah" : ""
+}, {
+  "id" : "38d9863f",
+  "nama" : "rizal",
+  "nim" : "21",
+  "alamat" : "Jl kamal",
+  "keluhan" : "Sakit Kepala",
+  "solusi" : "",
+  "tanggal" : "21 April 2025",
+  "tekananDarah" : ""
+}, {
+  "id" : "6ffdbb80",
+  "nama" : "rizal",
+  "nim" : "2525140502050002",
+  "alamat" : "qewqe",
+  "keluhan" : "Skripsi saya susah bu",
+  "solusi" : "",
+  "tanggal" : "21 April 2025",
+  "tekananDarah" : ""
+} ]

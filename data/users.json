@@ -1,0 +1,29 @@
+[ {
+  "username" : "tes",
+  "password" : "1",
+  "role" : "pasien"
+}, {
+  "username" : "yudha",
+  "password" : "yudha123",
+  "role" : "pasien"
+}, {
+  "username" : "budi",
+  "password" : "budi",
+  "role" : "pasien"
+}, {
+  "username" : "ilham",
+  "password" : "God",
+  "role" : "pasien"
+}, {
+  "username" : "Asep",
+  "password" : "asep",
+  "role" : "pasien"
+}, {
+  "username" : "yudha",
+  "password" : "yudha123",
+  "role" : "pasien"
+}, {
+  "username" : "rizal",
+  "password" : "rizal123",
+  "role" : "pasien"
+} ]

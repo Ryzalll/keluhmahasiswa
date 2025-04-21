@@ -1,0 +1,40 @@
+@(patients: List[models.Patient], request: play.mvc.Http.Request)
+
+@main("Riwayat Pasien") {
+    <div class="history-container">
+        <h1>DAFTAR KELUHAN MAHASISWA</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nama</th>
+                    <th>Nim</th>
+                    <th>Alamat</th>
+                    <th>Keluhan</th>
+                    <th>Solusi</th>
+                    <th>Tanggal</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            @for(patient <- patients) {
+                <tr>
+                    <td>@patient.id</td>
+                    <td>@patient.nama</td>
+                    <td>@patient.nim</td>
+                    <td>@patient.alamat</td>
+                    <td>@patient.keluhan</td>
+                    <td>@patient.solusi</td>
+                    <td>@patient.tanggal</td>
+                    <td>
+                        <a href="@routes.PatientController.editPage(patient.id)" class="btn btn-sm btn-primary">Edit</a>
+                        <a href="@routes.PatientController.delete(patient.id)" class="btn btn-sm btn-danger"
+                           onclick="return confirm('Yakin ingin menghapus data ini?');">Hapus</a>
+                    </td>
+                </tr>
+            }
+            </tbody>                        
+        </table>
+    </div>
+}

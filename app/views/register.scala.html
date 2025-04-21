@@ -1,0 +1,23 @@
+@(title: String)
+
+@main(title) {
+    <div class="register-container">
+        <h1>Form Pendaftaran Pasien</h1>
+        <form action="@routes.PatientController.register()" method="POST">
+            <label>Nama:
+                <input type="text" name="nama" required>
+            </label>
+            <label>Nim:
+                <input type="number" name="nim" required>
+            </label>
+            <label>Alamat:
+                <input type="text" name="alamat" required>
+            </label>
+            <label>Keluhan:
+                <input type="text" name="keluhan" required>
+            </label>
+            <button type="submit">Daftar</button>
+            <a href="javascript:history.back()" class="btn-bck">Kembali</a>
+        </form>
+    </div>
+}

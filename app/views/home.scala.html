@@ -1,0 +1,77 @@
+@(title: String)(implicit request: play.mvc.Http.Request)
+
+@main(title) {
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between px-4" style="background-color: #54b559;">
+        <a class="navbar-brand" href="#" style="color: #19351b; font-weight: bold;">🩺 Keluhan Mahasiswa bimbingan Sir. John</a>
+        <div class="d-flex">
+            <a href="@routes.AuthController.logout()" class="btn btn-outline-light">Logout</a>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <!-- Selamat Datang -->
+        <div class="text-center mb-4">
+            <h2 style="color: #19351b;">👨‍⚕️ Selamat ngeluh ke Sir. John</h2>
+            <p class="lead">Kami siap membantu Anda dengan pelayanan terbaik dan penuh kasih sayang.</p>
+        </div>
+
+        <!-- Card Pendaftaran -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-4">
+                <div class="card shadow-sm border-0" style="background-color: #e8f5e9;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">📝 Pendaftaran Pasien</h5>
+                        <p class="card-text">Daftarkan pasien baru untuk mendapatkan penanganan segera.</p>
+                        <a href="@routes.PatientController.registerPage" class="btn btn-success">Daftar Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+
+        <!-- Keunggulan Kami -->
+        <div class="text-center mb-4">
+            <h2 style="font-weight: bold;">
+                <span style="color: #0066cc;">Keunggulan</span> <span style="color: #28a745;">Kami</span>
+            </h2>
+            <hr style="width: 80px; border: 2px solid #28a745;">
+        </div>
+
+        <div class="row text-center">
+            <!-- Fasilitas Lengkap -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body">
+                        <i class="bi bi-building fs-1 mb-3"></i>
+                        <h5 class="card-title fw-bold">Fasilitas yang Lengkap dan Nyaman</h5>
+                        <p class="card-text">Kami mengutamakan kelengkapan sarana dan kenyamanan pasien</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pelayanan Prima -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body">
+                        <i class="bi bi-heart-pulse fs-1 mb-3"></i>
+                        <h5 class="card-title fw-bold">Mengedepankan Pelayanan yang Prima</h5>
+                        <p class="card-text">Melayani dengan sepenuh hati dan mengutamakan profesionalisme</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tenaga Medis Profesional -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body">
+                        <i class="bi bi-person-badge fs-1 mb-3"></i> <!-- Ganti ikon di sini -->
+                        <h5 class="card-title fw-bold">Tenaga Medis yang Profesional</h5>
+                        <p class="card-text">Dokter dan perawat yang ahli dan handal di bidangnya</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

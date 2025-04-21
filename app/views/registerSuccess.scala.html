@@ -1,0 +1,35 @@
+@(patient: models.Patient)
+
+@main("Pendaftaran Berhasil") {
+    <div class="container mt-5">
+        <h2>Pendaftaran Berhasil!</h2>
+        <p>Data pasien telah berhasil disimpan.</p>
+        <table class="table table-bordered mt-3">
+            <tr>
+                <th>Kode Pasien</th>
+                <td>@patient.id</td>
+            </tr>
+            <tr>
+                <th>Nama</th>
+                <td>@patient.nama</td>
+            </tr>
+            <tr>
+                <th>Nim</th>
+                <td>@patient.nim</td>
+            </tr>
+            <tr>
+                <th>Alamat</th>
+                <td>@patient.alamat</td>
+            </tr>
+            <tr>
+                <th>Keluhan</th>
+                <td>@patient.keluhan</td>
+            </tr>
+            <tr>
+                <th>Tanggal Daftar</th>
+                <td>@patient.tanggal</td>
+            </tr>            
+        </table>
+        <a href="@routes.HomeController.index()" class="btn-bck">Kembali ke Beranda</a>
+    </div>
+}
